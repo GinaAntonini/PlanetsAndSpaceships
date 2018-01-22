@@ -16,6 +16,11 @@ namespace PlanetsAndSpaceships
 
             planetList.AddRange(remainingPlanetsList);
 
+            planetList.Insert(1, "Venus");
+            planetList.Insert(2, "Earth");
+            planetList.Add("Pluto");
+
+
             Console.WriteLine();
             foreach (string planet in planetList)
             {
@@ -26,8 +31,5 @@ namespace PlanetsAndSpaceships
 }
 
 
-
-//Use Insert() to add Earth, and Venus in the correct order.
-//Use Add() again to add Pluto to the end of the list.
 //Now that all the planets are in the list, slice the list using GetRange() in order to extract the rocky planets into a new list called rockyPlanets.
 //Being good amateur astronomers, we know that Pluto is now a dwarf planet, so use the Remove() method to eliminate it from the end of planetList.
