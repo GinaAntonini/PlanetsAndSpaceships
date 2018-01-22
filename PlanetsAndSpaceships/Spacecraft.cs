@@ -9,6 +9,6 @@ namespace PlanetsAndSpaceships
     class Spacecraft
     {
         public string Name { get; set; }
-        public string ListOfPlanets { get; set; }
+        public string PlanetVisited { get; set; }
     }
 }
